@@ -13,7 +13,7 @@ public class serviceHealthIndicator implements HealthIndicator{
         if (errorCode != 0) {
             return Health.down().withDetail("Error Code", errorCode).build();
         }
-        return Health.up().build();
+        return Health.up().withDetail("success", true).build();
     }
 
     private int check() {
