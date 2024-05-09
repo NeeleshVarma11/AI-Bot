@@ -35,7 +35,7 @@ public class Controller {
     }
     
     
-    @PostMapping( "/sms")
+    @RequestMapping( "/sms")
     public String handleSms() {
     	System.out.println("called");
         Body body = new Body.Builder("The Robots are coming! Head for the hills!").build();
