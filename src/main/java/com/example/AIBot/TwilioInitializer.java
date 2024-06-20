@@ -16,8 +16,7 @@ public class TwilioInitializer {
     public TwilioInitializer() {
       
         Twilio.init(
-                "AC1d65110e4e6d27f889bcf9e05384cfe2",
-                "1e051d2c3ecb3ea1d85e911dbc16d19f"
+               
         );
         
     }
